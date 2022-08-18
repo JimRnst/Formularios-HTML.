@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+      maximum-scale=5"
+    />
+    <link rel="icon" href="/checkout-page-master/img/devchallenges.png" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://kit.fontawesome.com/c4b34cc545.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <title>Devchallenges</title>
+  </head>
+  
+  <body>
+
+    <main>
+      
+      <div id="content">
+        
+        <div id="contentheader">Checkout</div>
+        
+        <div id="contentbody">
+          
+          <div id="card1">
+            
+            <div class="title" id="one">Contact information</div>
+            
+            <form method="get" action="https://httpbin.org/get" class="formbox">
+                
+              <label for="e-mail" class="subtext">E-mail</label><br>
+                
+              <i class="fa-solid fa-envelope"></i>
+              
+              <input type="email" id="e-mail" name="e-mail" class="boxbox" placeholder="Enter your email..." autocomplete="on" required autofocus>
+              
+              <label for="phone" class="subtext">Phone</label><br>
+              
+              <i class="fa-solid fa-phone" id="icon-phone"></i>
+                
+              <input type="tel" id="phone" name="phone"  class="boxbox" placeholder="Enter your phone..." pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+              
+              <div class="title">Shipping address</div>
+                
+              <label for="fullname" class="subtext">Full Name</label><br>
+              
+              <i class="fa-solid fa-circle-user" id="icon-address"></i>
+                
+              <input type="text" id="fullname" name="fullname"  class="boxbox" placeholder="Rodney Cotton" required>
+                
+              <label for="addrees" class="subtext">Address</label><br>
+              
+              <i class="fa-solid fa-house"></i>
+                
+              <input type="text" id="adrees" name="addrees" class="boxbox" placeholder="Your address..." required>
+                
+              <label for="yourcity" class="subtext">City</label><br>
+              
+              <i class="fa-solid fa-city"></i>
+                
+              <input type="text" id="city" name="city" class="boxbox" placeholder="Your city..." required>
+
+              <div id="box1">
+                
+                <div id="yourcountry">
+                  
+                  <label for="country" class="subtext">Country</label><br>
+                  
+                  <i class="fa-solid fa-earth-americas"></i>
+                  
+                  <select name="country" id="country" class="boxbox" required>
+                    
+                    <option value="mexico" selected>México</option>
+                    
+                    <option value="estados unidos">Estados Unidos</option>
+                    
+                    <option value="canada">Canada</option>
+                  
+                  </select>
+                
+                </div>
+                
+                <div id="postal">
+                  
+                  <label for="postalcode" class="subtext">Postal Code</label><br>
+                  
+                  <i class="fa-brands fa-mailchimp"></i>
+                  
+                  <input type="text" id="postalcode" name="postalcode" class="boxbox" placeholder="Your postal code..." pattern="[0-9]{5}" required>
+                
+                </div>
+              
+              </div>
+              
+              <div id="check">
+                
+                <input type="checkbox" name="save" id="save" value="Save information">
+                
+                <label for="save" class="subtext">Save this information for next time</label>
+              
+              </div>
+              
+              <div id="btn-continue">
+                
+                <input type="submit" id="button-continue" value="Continue">
+              
+              </div>
+            
+            </form> 
+            
+          </div>
+          
+          <div id="card2">
+              
+              <div class="asidebox">
+                
+                <div class="imgbox">
+                  
+                  <img src="img/photo1.png" alt="Vintage Backbag">
+                
+                </div>
+                
+                <div class="asidecontent">
+                    
+                    <div class="subtext">Vintage Backbag</div>
+                    
+                    <div class="asidecontentprice">
+                      
+                      <div class="price">$54.99</div>
+                      
+                      <div class="subprice">$94.99</div>
+                    
+                    </div>
+                  
+                  <div class="butns">
+                    
+                    <div class="items">
+                      
+                      <input type="button" value="-" class="buttonmin">
+                      
+                      <input type="number" name="number-items" id="number-items" value="1" maxlength="1">
+                      
+                      <input type="button" value="+" class="buttonpls">
+                    
+                    </div>
+                  
+                  </div>
+                
+                </div>
+              
+              </div>
+
+              <div class="asidebox">
+                
+                <div class="imgbox">
+                  
+                  <img src="img/photo2.png" alt="Vintage Backbag">
+                
+                </div>
+                
+                <div class="asidecontent">
+                    
+                    <div class="subtext">Levi Shoes</div>
+                    
+                    <div class="asidecontentprice">
+                      
+                      <div class="price">$74.99</div>
+                      
+                      <div class="subprice">$1244.99</div>
+                    
+                    </div>
+                  
+                  <div class="butns">
+                    
+                    <div class="items">
+                      
+                      <input type="button" value="-" class="buttonmin">
+                      
+                      <input type="number" name="number-items" id="number-items" value="1" maxlength="1">
+                      
+                      <input type="button" value="+" class="buttonpls">
+                    
+                    </div>
+                  
+                  </div>
+                
+                </div>
+              
+              </div>
+              
+              <div id="shipping-total">
+                
+                <hr>
+                
+                <div class="shipping">
+                  
+                  <div class="shipping">Shipping</div>
+                  
+                  <div class="shippingprice">$19</div>
+                
+                </div>
+                
+                <hr>
+                
+                <div class="subtotal">
+                  
+                  <div class="totaltitle">Total</div>
+                  
+                  <div class="totalprice">$148.98</div>
+                
+                </div>
+              
+              </div>
+              
+              
+            
+            
+          
+          </div>
+        
+        </div>
+      
+      </div>
+    
+    </main>
+  
+  </body>
+  
+</html>
