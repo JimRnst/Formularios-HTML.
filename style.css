@@ -131,7 +131,7 @@ flex: 1 50%;
     opacity: 90%;
 }
 
-input:valid {
+input:valid:not(.number-items) {
     border: 3px solid green;
 }
 
@@ -212,7 +212,7 @@ input:valid {
     cursor: pointer;
 }
 
-#number-items{
+.number-items{
     display: flex;
     justify-content: end;
     width: 20px;

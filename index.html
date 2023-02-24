@@ -148,11 +148,11 @@
                     
                     <div class="items">
                       
-                      <input type="button" value="-" class="buttonmin">
+                      <button type="button"class="buttonmin" id="btn-minus-VB">-</button> 
                       
-                      <input type="number" name="number-items" id="number-items" value="1" maxlength="1">
+                      <input type="number" name="number-items" class="number-items" id="inpVB" value="0" maxlength="1">
                       
-                      <input type="button" value="+" class="buttonpls">
+                      <button type="button"class="buttonmin" id="btn-plus-VB">+</button> 
                     
                     </div>
                   
@@ -186,11 +186,11 @@
                     
                     <div class="items">
                       
-                      <input type="button" value="-" class="buttonmin">
+                      <button type="button"class="buttonmin" id="btn-minus-LS">-</button> 
                       
-                      <input type="number" name="number-items" id="number-items" value="1" maxlength="1">
+                      <input type="number" name="number-items" class="number-items" id="inpLS" value="0" maxlength="1">
                       
-                      <input type="button" value="+" class="buttonpls">
+                      <button type="button"class="buttonmin" id="btn-plus-LS">+</button> 
                     
                     </div>
                   
@@ -218,7 +218,7 @@
                   
                   <div class="totaltitle">Total</div>
                   
-                  <div class="totalprice">$148.98</div>
+                  <div class="totalprice">$<span id="total">0</span></div>
                 
                 </div>
               
@@ -235,6 +235,8 @@
       </div>
     
     </main>
+
+    <script src="index.js"></script>
   
   </body>
   
